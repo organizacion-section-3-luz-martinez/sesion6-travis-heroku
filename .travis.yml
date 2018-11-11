@@ -8,7 +8,7 @@ before_script:
 script: ./vendor/bin/phpunit ./tests
 deploy:
   provider: azure_web_apps
-  app:  sesion6-github
+  site:  sesion6-github.azurewebsites.net
   on: master
   skip_cleanup: true
   username: sesion6-github\$sesion6-github
