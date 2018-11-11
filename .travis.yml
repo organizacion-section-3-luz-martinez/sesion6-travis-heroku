@@ -11,5 +11,5 @@ deploy:
   app:  sesion6-github
   on: master
   skip_cleanup: true
-  user: sesion6-github\$sesion6-github
+  username: sesion6-github\$sesion6-github
   password: xK5dBJMLn6gbM1GAsYZe0dolXPuCMP7FcimrZ6fsnQenc9p1syfiJbuNrjlZ
