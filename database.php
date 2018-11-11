@@ -15,10 +15,10 @@ if ($os) {
 $settings = array(
     'driver' => 'mysql',
     'host' => $os ? $url["host"] : 'localhost',
-    'port' => $os ? $url["port"] : 3306,
-    'database' => $os ? substr($url["path"], 1) : 'biblioteca',
-    'username' => $os ? $url["user"] : 'yoyo',
-    'password' => $os ? $url["pass"] : 'holaserver',
+    'port' => $os ? $url["port"] : 50758,
+    'database' => $os ? substr($url["path"], 1) : 'localdb',
+    'username' => $os ? $url["user"] : 'azure',
+    'password' => $os ? $url["pass"] : '6#vHD_$',
     'charset'   => 'utf8',
     'collation' => 'utf8_spanish_ci',
     'prefix' => ''
