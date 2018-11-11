@@ -15,7 +15,7 @@ if ($os) {
 $settings = array(
     'driver' => 'mysql',
     'host' => $os ? $url["host"] : 'localhost',
-    'port' => $os ? $url["port"] : 50758,
+    'port' => $os ? $url["port"] : 56280,
     'database' => $os ? substr($url["path"], 1) : 'localdb',
     'username' => $os ? $url["user"] : 'azure',
     'password' => $os ? $url["pass"] : '6#vWHD_$',
