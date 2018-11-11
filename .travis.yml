@@ -8,8 +8,8 @@ before_script:
 script: ./vendor/bin/phpunit ./tests
 deploy:
   provider: azure_web_apps
-  site:  sesion6-github.azurewebsites.net
-  on: master
+  site:  prueba-azure.azurewebsites.net
+  on: azure
   skip_cleanup: true
-  username: sesion6-github\$sesion6-github
-  password: xK5dBJMLn6gbM1GAsYZe0dolXPuCMP7FcimrZ6fsnQenc9p1syfiJbuNrjlZ
+  username: prueba-azure\$prueba-azure
+  password: kwvB5jLHapuWmXH7vBoMKRvAytCzuKzAJs7K8Lh2x9gt9buDWSbtPs6cpZsP
