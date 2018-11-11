@@ -33,6 +33,34 @@ INSERT INTO `movies` (`name`, `description`, `director`, `embedUrl`, `datePublis
 ('Alta Fidelidad', 'Rob Gordon (John Cusack) es el propietario de una tienda de discos de Chicago a punto de quebrar y en la que sólo se venden discos de vinilo. Rob comparte su afición por el clásico material con sus dos empleados, Dick (Todd Louiso) y Barry (Jack Black). En la tienda, los tres reflexionan y discuten sobre la música que aman. Pero Rob tiene otro problema: quiere volver con su antigua novia Laura (Iben Hjejle), que está saliendo con otro chico.', 'Stephen Frears', 'https://www.youtube.com/embed/cxFFRhNovbo', '2000-05-19');
 
 
+
+
+--
+-- Estructura de tabla para la tabla `series`
+--
+
+CREATE TABLE IF NOT EXISTS `series` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `description` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `director` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `embedUrl` TEXT COLLATE utf8_spanish_ci NOT NULL,
+  `datePublished` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `series`
+--
+
+INSERT INTO `series` (`name`, `description`, `director`, `embedUrl`, `datePublished`) VALUES
+('Suits', 'Mike es un inteligente estudiante que ha dejado la universidad pero que es contratado por el brillante Harvey Specter para trabajar en una firma de abogados a pesar de no ser graduado en derecho. La serie trata de cómo estos dos abogados resuelven casos al mismo tiempo que mantienen a salvo el secreto de Mike.', 'Aaron Korsh', 'https://www.youtube.com/watch?v=sRsBREYFlIo', '2011-06-23'),
+('Juego de tronos', 'La serie está ambientada en los continentes ficticios de Poniente y Essos, y recorre distintos arcos narrativos en los cuales participan un gran número de personajes. Su primer arco narrativo se centra en las violentas luchas dinásticas entre varias familias nobles por el control del Trono de Hierro del continente de Poniente y sus Siete Reinos.', 'David Benioff', 'https://www.youtube.com/watch?v=RVjChOL9bUg', '2011-04-07'),
+('El puente', 'En medio del Puente de Øresund, que conecta Copenhague en Dinamarca con Malmö en Suecia, aparece el cuerpo de una política sueca. El cuerpo, cortado en dos por la cintura, fue colocado precisamente en la frontera entre ambos países, cayendo así en la jurisdicción de las dos agencias de la policía danesa y sueca. Después de un examen más detenido, resulta que el cuerpo, en realidad, está compuesto de dos cuerpos separados. Una mitad que pertenece a una mujer danesa. Saga Norén, desde el lado sueco, y Martin Rohde, del danés, conducen la investigación para atrapar al asesino', 'Hans Rosenfeldt', 'https://www.youtube.com/watch?v=_qGK1ETb-38', '2011-09-21');
+
+
+
+
 --
 -- Estructura de tabla para la tabla `musicalbums`
 --
